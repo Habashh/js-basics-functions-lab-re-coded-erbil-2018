@@ -33,7 +33,7 @@ function calculatesFarePrice (fromPickup, toHq) {
   else if (disInFoot > 400 && disInFoot <= 2000)
   {
     
-  return 0.02 * disInFoot;
+  return (disInFoot-400)*0.02;
   } 
   else if (disInFoot > 2000 && disInFoot < 2500) 
   {
